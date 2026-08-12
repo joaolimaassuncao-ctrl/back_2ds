@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós | Oficina Mecânica</title>
+    <!-- Ícones Modernos -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #ff4d00;
+            --dark: #111111;
+            --gray: #1e1e1e;
+            --light: #ffffff;
+            --text-gray: #aaaaaa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Imagem de Fundo (Mesmo padrão da primeira página) */
+        .bg-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(rgba(17, 17, 17, 0.85), rgba(17, 17, 17, 0.95)), 
+                              url('https://unsplash.com');
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+        }
+
+        /* Card Principal Ampliado para Conteúdo */
+        .card {
+            position: relative;
+            z-index: 2;
+            background: rgba(30, 30, 30, 0.65);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 77, 0, 0.2);
+            padding: 2.5rem;
+            border-radius: 16px;
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--light);
+        }
+
+        /* Lista de Diferenciais da Oficina */
+        .features {
+            text-align: left;
+            margin-bottom: 2rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 0.8rem 1rem;
+            border-radius: 8px;
+            border-left: 3px solid var(--primary);
+        }
+
+        .feature-item i {
+            color: var(--primary);
+            font-size: 1.2rem;
+            width: 20px;
+            text-align: center;
+        }
+
+        .feature-item p {
+            color: var(--light);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        /* Botão Secundário para Voltar */
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: transparent;
+            color: var(--light);
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            width: 100%;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-back:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--light);
+            transform: translateY(-2px);
+        }
+
+        .btn-back i {
+            transition: transform 0.3s ease;
+        }
+
+        .btn-back:hover i {
+            transform: translateX(-4px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fundo Visual -->
+    <div class="bg-background"></div>
+
+    <!-- Conteúdo da Página Sobre -->
+    <div class="card">
+        <h3>Nossa Oficina</h3>
+        
+        <div class="features">
+            <div class="feature-item">
+                <i class="fa-solid fa-gauge-high"></i>
+                <p>Diagnóstico digital rápido e preciso.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-user-check"></i>
+                <p>Mecânicos certificados e experientes.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <p>Peças originais com garantia de fábrica.</p>
+            </div>
+        </div>
+        
+        <!-- Botão para retornar à página inicial -->
+        <a href="/" class="btn-back">
+            <i class="fa-solid fa-arrow-left"></i> Voltar para o Início
+        </a>
+    </div>
+
+</body>
+</html>
